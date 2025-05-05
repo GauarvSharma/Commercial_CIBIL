@@ -108,7 +108,7 @@ if uploaded_file:
             result = process_excel(uploaded_file)
             if result:
                 st.success("Processing complete.")
-                st.download_button("Download Output", result, file_name="output.txt", mime="text/plain")
+                st.download_button("Download Output", result, file_name="output.Tap", mime="text/plain")
             else:
                 st.warning("No valid data found to process.")
 
